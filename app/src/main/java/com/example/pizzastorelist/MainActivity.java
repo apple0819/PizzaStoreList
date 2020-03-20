@@ -43,6 +43,8 @@ public class MainActivity extends BaseActivity {
         pizzaStores.add(new PizzaStore("미스터피자","https://post-phinf.pstatic.net/MjAxODEyMDVfMzYg/MDAxNTQzOTYxOTA4NjM3.8gsStnhxz7eEc9zpt5nmSRZmI-Pzpl4NJvHYU-Dlgmcg.7Vpgk0lopJ5GoTav3CUDqmXi2-_67S5AXD0AGbbR6J4g.JPEG/IMG_1641.jpg?type=w1200", "010-8423-9632"));
         pizzaStores.add(new PizzaStore("도미노피자","https://pbs.twimg.com/profile_images/1098371010548555776/trCrCTDN_400x400.png", "010-1596-1498"));
 
+
+
         psa.notifyDataSetChanged();
     }
 }
