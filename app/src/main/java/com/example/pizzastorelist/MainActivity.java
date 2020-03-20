@@ -3,7 +3,10 @@ package com.example.pizzastorelist;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 
 import com.example.pizzastorelist.adapter.PizzaStoreAdapter;
 import com.example.pizzastorelist.databinding.ActivityMainBinding;
@@ -30,6 +33,18 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setupEvents() {
+
+        binding.pizzaListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                PizzaStore clickedStore = pizzaStores.get(position);
+
+                Intent intent = new Intent(mContext, PizzaStoreDetailActivity.class);
+                intent.putExtra("store",clickedStore);
+                startActivity(intent);
+            }
+        });
 
     }
 
