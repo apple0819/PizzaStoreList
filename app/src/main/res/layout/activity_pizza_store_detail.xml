@@ -6,7 +6,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".PizzaStoreDetailActivity">
+        tools:context=".PizzaStoreDetailActivity"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
 
 
         <LinearLayout
@@ -17,7 +19,7 @@
             android:gravity="center">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/logoImg"
+                android:id="@+id/storelogoImg"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:civ_border_width="2dp"
@@ -35,6 +37,7 @@
             android:textColor="#000000"/>
 
         <TextView
+            android:id="@+id/storeNameTxt"
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,6 +66,7 @@
                     android:textColor="#000000"/>
 
                 <TextView
+                    android:id="@+id/storePhoneTxt"
                     android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -85,6 +89,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/callBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="전화 걸기"
