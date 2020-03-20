@@ -59,7 +59,6 @@ public class MainActivity extends BaseActivity {
         pizzaStores.add(new PizzaStore("도미노피자","https://pbs.twimg.com/profile_images/1098371010548555776/trCrCTDN_400x400.png", "010-1596-1498"));
 
 
-
         psa.notifyDataSetChanged();
     }
 }
