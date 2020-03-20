@@ -6,8 +6,9 @@ public class PizzaStore implements Serializable {
 
     private String storeName;
     private String logoUrl;
+    private String phoneNum;
 
-    public PizzaStore(String storeName, String logoUrl) {
+    public PizzaStore(String storeName, String logoUrl, String phoneNum) {
         this.storeName = storeName;
         this.logoUrl = logoUrl;
     }
@@ -26,5 +27,13 @@ public class PizzaStore implements Serializable {
 
     public void setLogoUrl(String logoUrl) {
         this.logoUrl = logoUrl;
+    }
+
+    public String getPhoneNum() {
+        return phoneNum;
+    }
+
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
     }
 }
